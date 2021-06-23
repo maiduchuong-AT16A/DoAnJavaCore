@@ -23,11 +23,11 @@ public class DoAnJava {
         while(true){
             int chon = sc.nextInt();
             switch (chon){
-                case 1:{
+                case 1 -> {
                     sinhvien.Input();
                     break;
                 }
-                case 2:{
+                case 2 -> {
                     sinhvien.Show();
                     break;
                 }
