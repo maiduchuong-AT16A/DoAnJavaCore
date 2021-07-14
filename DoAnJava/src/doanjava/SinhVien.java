@@ -17,8 +17,12 @@ public class SinhVien {
     private String ID;
     private String hoDem;
     private String ten;
+<<<<<<< HEAD
     private boolean gender;
     private String Lop;
+=======
+    private String cLass;
+>>>>>>> c98a6ebcb400e9a14d34ec4848aaa16bb6ad0f40
 
     private LocalDate dayBir;
 
@@ -41,14 +45,24 @@ public class SinhVien {
     public void xuatThongTin() {
         String name = String.format("%s %s", getHoDem(), getTen());
         String day = this.dayBir.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+<<<<<<< HEAD
         String str = String.format("%-10s%-20s%-10s%-20s%-20s%-10.2f", getID(), name, getLop(), day, getQueQuan(), getDiemTB());
+=======
+        String str = String.format("%-10s%-20s%-10s%-20s%-20s%-10.2f", getID(), name, getcLass(), day, getQueQuan(), getDiemTB());
+>>>>>>> c98a6ebcb400e9a14d34ec4848aaa16bb6ad0f40
         System.out.println(str);
     }
 
     public void xuatDiem() {
+<<<<<<< HEAD
         String str = String.format("%-15s%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f",
                  getID(), getToanHoc(), getVatLy(), getHoaHoc(), getNguVan(), getSinhHoc(), getTinHoc(),
                  getCongNghe(), getDiaLy(), getLichSu(), getGDCD());
+=======
+        String str = String.format("%-15s%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f"
+                , getID(), getToanHoc(), getVatLy(), getHoaHoc(), getNguVan(), getSinhHoc(), getTinHoc()
+                , getCongNghe(), getDiaLy(), getLichSu(), getGDCD());
+>>>>>>> c98a6ebcb400e9a14d34ec4848aaa16bb6ad0f40
         System.out.println(str);
     }
 
@@ -101,6 +115,7 @@ public class SinhVien {
         this.ten = ten;
     }
 
+<<<<<<< HEAD
     public boolean isGender() {
         return gender;
     }
@@ -115,6 +130,14 @@ public class SinhVien {
 
     public void setLop(String Lop) {
         this.Lop = Lop;
+=======
+    public String getcLass() {
+        return cLass;
+    }
+
+    public void setcLass(String cLass) {
+        this.cLass = cLass;
+>>>>>>> c98a6ebcb400e9a14d34ec4848aaa16bb6ad0f40
     }
 
     public LocalDate getDayBir() {
