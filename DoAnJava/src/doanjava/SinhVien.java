@@ -6,7 +6,6 @@
 package doanjava;
 
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.format.DateTimeFormatter;
 
 /**
@@ -14,15 +13,17 @@ import java.time.format.DateTimeFormatter;
  * @author Luc
  */
 public class SinhVien {
+
     private String ID;
     private String hoDem;
     private String ten;
-    private String lopSv;
-    
+    private boolean gender;
+    private String Lop;
+
     private LocalDate dayBir;
-    
+
     private String queQuan;
-    
+
     private double toanHoc;
     private double vatLy;
     private double hoaHoc;
@@ -37,35 +38,45 @@ public class SinhVien {
     public SinhVien() {
     }
 
-    
-    public void xuatThongTin(){
-        String name = String.format("%s %s", getHoDem(),getTen());
+    public void xuatThongTin() {
+        String name = String.format("%s %s", getHoDem(), getTen());
         String day = this.dayBir.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        String str = String.format("%-10s%-20s%-10s%-20s%-20s",getID() , name,getLopSv(),day,getQueQuan());
-    }
-  
-    public String xepLoaiHocLuc(){
-             double dTB = getDiemTB();
-             String danhHieu = new String();
-             if (dTB >= 6.5 && dTB<=7.9 ) {
-                 danhHieu = "Tien Tien";
-             }if (dTB >=8.0&&dTB<=10){
-                 danhHieu = "Gioi";
-             }if (dTB >=5 && dTB<=6.4) {
-                     danhHieu = "Trung Binh";
-             }if (dTB >=0 &&dTB<=4.9){
-                     danhHieu = "Yeu";
-             }else{
-                     danhHieu = "<!>không hợp lệ";
-             }
-             return danhHieu;
+        String str = String.format("%-10s%-20s%-10s%-20s%-20s%-10.2f", getID(), name, getLop(), day, getQueQuan(), getDiemTB());
+        System.out.println(str);
     }
 
-    public double getDiemTB(){
-        double dTB= (this.toanHoc+this.vatLy+this.hoaHoc+this.sinhHoc+this.tinHoc+this.congNghe+this.nguVan+this.diaLy+this.lichSu+this.GDCD)/10;
+    public void xuatDiem() {
+        String str = String.format("%-15s%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f",
+                 getID(), getToanHoc(), getVatLy(), getHoaHoc(), getNguVan(), getSinhHoc(), getTinHoc(),
+                 getCongNghe(), getDiaLy(), getLichSu(), getGDCD());
+        System.out.println(str);
+    }
+
+    public String xepLoaiHocLuc() {
+        double dTB = getDiemTB();
+        String danhHieu = new String();
+        if (dTB >= 6.5 && dTB <= 7.9) {
+            danhHieu = "Tien Tien";
+        }
+        if (dTB >= 8.0 && dTB <= 10) {
+            danhHieu = "Gioi";
+        }
+        if (dTB >= 5 && dTB <= 6.4) {
+            danhHieu = "Trung Binh";
+        }
+        if (dTB >= 0 && dTB <= 4.9) {
+            danhHieu = "Yeu";
+        } else {
+            danhHieu = "<!>không hợp lệ";
+        }
+        return danhHieu;
+    }
+
+    public double getDiemTB() {
+        double dTB = (this.toanHoc + this.vatLy + this.hoaHoc + this.sinhHoc + this.tinHoc + this.congNghe + this.nguVan + this.diaLy + this.lichSu + this.GDCD) / 10;
         return dTB;
     }
-    
+
     public String getID() {
         return ID;
     }
@@ -90,12 +101,20 @@ public class SinhVien {
         this.ten = ten;
     }
 
-    public String getLopSv() {
-        return lopSv;
+    public boolean isGender() {
+        return gender;
     }
 
-    public void setLopSv(String lopSv) {
-        this.lopSv = lopSv;
+    public void setGender(boolean gender) {
+        this.gender = gender;
+    }
+
+    public String getLop() {
+        return Lop;
+    }
+
+    public void setLop(String Lop) {
+        this.Lop = Lop;
     }
 
     public LocalDate getDayBir() {
@@ -194,8 +213,4 @@ public class SinhVien {
         this.GDCD = GDCD;
     }
 
-    
-    
-    
 }
-
