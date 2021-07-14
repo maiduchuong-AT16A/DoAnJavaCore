@@ -19,11 +19,6 @@ public class QuanLySinhVien {
 
     ArrayList<SinhVien> list = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> c98a6ebcb400e9a14d34ec4848aaa16bb6ad0f40
     public void Input() {
 // nhập thông tin của sinh viên và điểm sinh viên
         SinhVien sinhvien = new SinhVien();
@@ -81,12 +76,11 @@ public class QuanLySinhVien {
         }
         sinhvien.setcLass(lop);
 
-<<<<<<< HEAD
+
         System.out.println("Lop tin chi:");
         sv.setLopSv(sc.nextLine());
         
-=======
->>>>>>> c98a6ebcb400e9a14d34ec4848aaa16bb6ad0f40
+
         System.out.println("Ngay Thang Nam Sinh:");
         int day = sc.nextInt();
         int mot = sc.nextInt();
