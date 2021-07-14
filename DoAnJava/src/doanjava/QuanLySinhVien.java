@@ -17,7 +17,6 @@ public class QuanLySinhVien {
     ArrayList<SinhVien> list = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
     
-    @SuppressWarnings("empty-statement")
     public void Input() {
         SinhVien sv = new SinhVien();
         System.out.println("ho va ten:");
@@ -49,7 +48,6 @@ public class QuanLySinhVien {
         System.out.println("Lop tin chi:");
         sv.setLopSv(sc.nextLine());
         
-        //Nhập ngày tháng nam sinh bằng localdate
         System.out.println("Ngay Thang Nam Sinh:");
         int day = sc.nextInt();
         int mot = sc.nextInt();
