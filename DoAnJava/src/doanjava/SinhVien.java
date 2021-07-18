@@ -15,8 +15,7 @@ import java.time.format.DateTimeFormatter;
 public class SinhVien {
 
     private String ID;
-    private String hoDem;
-    private String ten;
+    private String hoTen;
     private boolean gender;
     private String Lop;
 
@@ -38,36 +37,19 @@ public class SinhVien {
     public SinhVien() {
     }
 
-    public void xuatThongTin() {
-        String name = String.format("%s %s", getHoDem(), getTen());
-        String day = this.dayBir.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        String str = String.format("%-10s%-20s%-10s%-20s%-20s%-10.2f", getID(), name, getLop(), day, getQueQuan(), getDiemTB());
-        System.out.println(str);
-    }
-
-    public void xuatDiem() {
-        String str = String.format("%-15s%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f%-5.2f",
-                 getID(), getToanHoc(), getVatLy(), getHoaHoc(), getNguVan(), getSinhHoc(), getTinHoc(),
-                 getCongNghe(), getDiaLy(), getLichSu(), getGDCD());
-        System.out.println(str);
-    }
-
     public String xepLoaiHocLuc() {
         double dTB = getDiemTB();
         String danhHieu = new String();
         if (dTB >= 6.5 && dTB <= 7.9) {
-            danhHieu = "Tien Tien";
-        }
-        if (dTB >= 8.0 && dTB <= 10) {
-            danhHieu = "Gioi";
-        }
-        if (dTB >= 5 && dTB <= 6.4) {
-            danhHieu = "Trung Binh";
-        }
-        if (dTB >= 0 && dTB <= 4.9) {
-            danhHieu = "Yeu";
+            danhHieu = "Tiên Tiến";
+        } else if (dTB >= 8.0 && dTB <= 10) {
+            danhHieu = "Giỏi";
+        } else if (dTB >= 5 && dTB <= 6.4) {
+            danhHieu = "Trung Bình";
+        } else if (dTB >= 0 && dTB <= 4.9) {
+            danhHieu = "Yếu";
         } else {
-            danhHieu = "<!>không hợp lệ";
+            danhHieu = "<!>Lỗi";
         }
         return danhHieu;
     }
@@ -85,20 +67,12 @@ public class SinhVien {
         this.ID = ID;
     }
 
-    public String getHoDem() {
-        return hoDem;
+    public String getHoTen() {
+        return hoTen;
     }
 
-    public void setHoDem(String hoDem) {
-        this.hoDem = hoDem;
-    }
-
-    public String getTen() {
-        return ten;
-    }
-
-    public void setTen(String ten) {
-        this.ten = ten;
+    public void setHoTen(String hoTen) {
+        this.hoTen = hoTen;
     }
 
     public boolean isGender() {
