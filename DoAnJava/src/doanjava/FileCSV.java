@@ -5,6 +5,9 @@
  */
 package doanjava;
 
+import com.sun.source.tree.BreakTree;
+import doanjava.model.MonHoc;
+import doanjava.model.SinhVien;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -29,14 +32,18 @@ public class FileCSV {
     private static final String PATH_CSV_FILE = currenDir + separator + "data" + separator + "FileData.csv";
     private static final String PATH_CSV_FILE_INFO = currenDir + separator + "data" + separator + "FileDataInfo.csv";
     private static final String PATH_CSV_FILE_SCORE = currenDir + separator + "data" + separator + "FileDataScore.csv";
+    private static final String PATH_CSV_FILE_OUPUT = currenDir + separator + "data" + separator + "FileDataOuput.csv";
 
     public void ReadFileCSV(ArrayList<SinhVien> list) {
         BufferedReader bf = null;
         try {
             bf = new BufferedReader(new FileReader(PATH_CSV_FILE));
             String line = null;
+            String[] titel = new String[10];
             try {
                 line = bf.readLine();
+                titel = line.split(",");
+
             } catch (IOException ex) {
                 Logger.getLogger(FileCSV.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -44,6 +51,18 @@ public class FileCSV {
                 while ((line = bf.readLine()) != null) {
                     String[] rd = line.split(",");
                     SinhVien sinhVien = new SinhVien();
+                    MonHoc toanMonHoc = new MonHoc();
+                    MonHoc lyMonHoc = new MonHoc();
+                    MonHoc hoaMonHoc = new MonHoc();
+                    MonHoc vanMonHoc = new MonHoc();
+                    MonHoc sinhMonHoc = new MonHoc();
+                    MonHoc suMonHoc = new MonHoc();
+                    MonHoc diaMonHoc = new MonHoc();
+                    MonHoc gdcdMonHoc = new MonHoc();
+                    MonHoc tinMonHoc = new MonHoc();
+                    MonHoc cnMonHoc = new MonHoc();
+                    ArrayList<MonHoc> listMH = new ArrayList<>();
+
                     sinhVien.setID(rd[1]);
 
                     sinhVien.setHoTen(rd[2]);
@@ -65,16 +84,38 @@ public class FileCSV {
 
                     sinhVien.setLop(rd[6]);
 
-                    sinhVien.setToanHoc(Double.parseDouble(rd[7]));
-                    sinhVien.setVatLy(Double.parseDouble(rd[8]));
-                    sinhVien.setHoaHoc(Double.parseDouble(rd[9]));
-                    sinhVien.setNguVan(Double.parseDouble(rd[10]));
-                    sinhVien.setSinhHoc(Double.parseDouble(rd[11]));
-                    sinhVien.setLichSu(Double.parseDouble(rd[12]));
-                    sinhVien.setDiaLy(Double.parseDouble(rd[13]));
-                    sinhVien.setGDCD(Double.parseDouble(rd[14]));
-                    sinhVien.setTinHoc(Double.parseDouble(rd[15]));
-                    sinhVien.setCongNghe(Double.parseDouble(rd[16]));
+                    toanMonHoc.setMonHoc(titel[0]);
+                    toanMonHoc.setDiem(Double.parseDouble(rd[7]));
+                    listMH.add(toanMonHoc);
+                    lyMonHoc.setMonHoc(titel[1]);
+                    lyMonHoc.setDiem(Double.parseDouble(rd[8]));
+                    listMH.add(lyMonHoc);
+                    hoaMonHoc.setMonHoc(titel[2]);
+                    hoaMonHoc.setDiem(Double.parseDouble(rd[9]));
+                    listMH.add(hoaMonHoc);
+                    vanMonHoc.setMonHoc(titel[3]);
+                    vanMonHoc.setDiem(Double.parseDouble(rd[10]));
+                    listMH.add(vanMonHoc);
+                    sinhMonHoc.setMonHoc(titel[4]);
+                    sinhMonHoc.setDiem(Double.parseDouble(rd[11]));
+                    listMH.add(sinhMonHoc);
+                    suMonHoc.setMonHoc(titel[5]);
+                    suMonHoc.setDiem(Double.parseDouble(rd[12]));
+                    listMH.add(suMonHoc);
+                    diaMonHoc.setMonHoc(titel[6]);
+                    diaMonHoc.setDiem(Double.parseDouble(rd[13]));
+                    listMH.add(diaMonHoc);
+                    gdcdMonHoc.setMonHoc(titel[7]);
+                    gdcdMonHoc.setDiem(Double.parseDouble(rd[14]));
+                    listMH.add(gdcdMonHoc);
+                    tinMonHoc.setMonHoc(titel[8]);
+                    tinMonHoc.setDiem(Double.parseDouble(rd[15]));
+                    listMH.add(tinMonHoc);
+                    cnMonHoc.setMonHoc(titel[9]);
+                    cnMonHoc.setDiem(Double.parseDouble(rd[16]));
+                    listMH.add(cnMonHoc);
+                    sinhVien.setListDiem(listMH);
+
                     list.add(sinhVien);
                 }
             } catch (IOException ex) {
@@ -101,11 +142,11 @@ public class FileCSV {
             String tilte = "STT,ID,Họ Và Tên,Giới Tính,Ngày Sinh,Quê Quán,Lớp,Điểm TB,Xếp Loại";
             fw.write(tilte);
             fw.write("\n");
-            int i=1;
+            int i = 1;
             for (SinhVien sinhVien : list) {
                 String gender = sinhVien.isGender() == true ? "Nam" : "Nữ";
                 String dateString = sinhVien.getDayBir().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-                String f = String.format("%02d,%s,%s,%s,%s,%s,%s,%.2f,%s",i++, sinhVien.getID(), sinhVien.getHoTen(),
+                String f = String.format("%02d,%s,%s,%s,%s,%s,%s,%.2f,%s", i++, sinhVien.getID(), sinhVien.getHoTen(),
                         gender, sinhVien.getDayBir(), sinhVien.getQueQuan(), sinhVien.getLop(), sinhVien.getDiemTB(), sinhVien.xepLoaiHocLuc());
                 fw.write(f);
                 fw.write("\n");
@@ -134,8 +175,11 @@ public class FileCSV {
             for (SinhVien sinhVien : list) {
                 String gender = sinhVien.isGender() == true ? "Nam" : "Nữ";
                 String dateString = sinhVien.getDayBir().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-                String f = String.format("%02d,%s,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f", i++, sinhVien.getID(), sinhVien.getToanHoc(), sinhVien.getVatLy(), sinhVien.getHoaHoc(),
-                        sinhVien.getNguVan(), sinhVien.getSinhHoc(), sinhVien.getLichSu(), sinhVien.getDiaLy(), sinhVien.getGDCD(), sinhVien.getTinHoc(), sinhVien.getCongNghe());
+                String diem = "";
+                for (MonHoc item : sinhVien.getListDiem()) {
+                    diem += String.format(",%.2f", item.getDiem());
+                }
+                String f = String.format("%02d,%s%s", i++, sinhVien.getID(), diem);
                 fw.write(f);
                 fw.write("\n");
             }
@@ -163,9 +207,45 @@ public class FileCSV {
             for (SinhVien sinhVien : list) {
                 String gender = sinhVien.isGender() == true ? "Nam" : "Nữ";
                 String dateString = sinhVien.getDayBir().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-                String f = String.format("%02d,%s,%s,%s,%s,%s,%s,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f", i++, sinhVien.getID(), sinhVien.getHoTen(),
-                        gender, sinhVien.getDayBir(), sinhVien.getQueQuan(), sinhVien.getLop(), sinhVien.getToanHoc(), sinhVien.getVatLy(), sinhVien.getHoaHoc(),
-                        sinhVien.getNguVan(), sinhVien.getSinhHoc(), sinhVien.getLichSu(), sinhVien.getDiaLy(), sinhVien.getGDCD(), sinhVien.getTinHoc(), sinhVien.getCongNghe());
+                String diem = "";
+                for (MonHoc item : sinhVien.getListDiem()) {
+                    diem += String.format(",%.2f", item.getDiem());
+                }
+                String f = String.format("%02d,%s,%s,%s,%s,%s,%s%s", i++, sinhVien.getID(), sinhVien.getHoTen(),
+                        gender, sinhVien.getDayBir(), sinhVien.getQueQuan(), sinhVien.getLop(), diem);
+                fw.write(f);
+                fw.write("\n");
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(FileCSV.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            if (fw != null) {
+                try {
+                    fw.close();
+                } catch (IOException ex) {
+                    Logger.getLogger(FileCSV.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    }
+
+    public void WriteFileCSVOutPut(ArrayList<SinhVien> list) {
+        FileWriter fw = null;
+        try {
+            fw = new FileWriter(PATH_CSV_FILE_OUPUT);
+            String tilte = "STT,ID,Họ Và Tên,Giới Tính,Ngày Sinh,Quê Quán,Lớp,Toán Học,Vật Lý,Hóa Học,Văn Học,Sinh Học,Lịch Sử,Địa Lý,GDCD,Tin Học,Công nghệ";
+            fw.write(tilte);
+            fw.write("\n");
+            int i = 1;
+            for (SinhVien sinhVien : list) {
+                String gender = sinhVien.isGender() == true ? "Nam" : "Nữ";
+                String dateString = sinhVien.getDayBir().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+                String diem = "";
+                for (MonHoc item : sinhVien.getListDiem()) {
+                    diem += String.format(",%.2f", item.getDiem());
+                }
+                String f = String.format("%02d,%s,%s,%s,%s,%s,%s%s", i++, sinhVien.getID(), sinhVien.getHoTen(),
+                        gender, sinhVien.getDayBir(), sinhVien.getQueQuan(), sinhVien.getLop(), diem);
                 fw.write(f);
                 fw.write("\n");
             }

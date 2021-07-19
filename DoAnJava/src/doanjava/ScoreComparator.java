@@ -5,6 +5,7 @@
  */
 package doanjava;
 
+import doanjava.model.SinhVien;
 import java.util.Comparator;
 
 /**
