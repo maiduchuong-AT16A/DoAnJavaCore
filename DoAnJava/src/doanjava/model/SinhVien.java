@@ -4,6 +4,7 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import java.time.LocalDate;
+import java.util.Date;
 import javax.annotation.processing.Generated;
 
 @Generated("jsonschema2pojo")
@@ -23,7 +24,7 @@ public class SinhVien {
     private String lop;
     @SerializedName("dayBir")
     @Expose
-    private LocalDate dayBir;
+    private Date dayBir;
     @SerializedName("queQuan")
     @Expose
     private String queQuan;
@@ -48,7 +49,7 @@ public class SinhVien {
      * @param queQuan
      * @param monHoc
      */
-    public SinhVien(String id, String hoTen, boolean gender, String lop, LocalDate dayBir, String queQuan, List<MonHoc> monHoc) {
+    public SinhVien(String id, String hoTen, boolean gender, String lop, Date dayBir, String queQuan, List<MonHoc> monHoc) {
         super();
         this.ID = id;
         this.hoTen = hoTen;
@@ -91,11 +92,11 @@ public class SinhVien {
         this.lop = lop;
     }
 
-    public LocalDate getDayBir() {
+    public Date getDayBir() {
         return dayBir;
     }
 
-    public void setDayBir(LocalDate dayBir) {
+    public void setDayBir(Date dayBir) {
         this.dayBir = dayBir;
     }
 

@@ -10,10 +10,15 @@ import doanjava.model.SinhVien;
 import java.awt.MouseInfo;
 import java.awt.Panel;
 import java.awt.event.WindowEvent;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -25,12 +30,13 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Menu extends javax.swing.JFrame {
 
-    private FileCSV file = new FileCSV();
-    private FileJson fileJson = new FileJson();
+    private FileCSV fileCSV = new FileCSV();
+    private FileJson fileJSON = new FileJson();
     private ArrayList<SinhVien> list = new ArrayList<>();
     private ArrayList<SinhVien> listSearch = new ArrayList<>();
     DefaultTableModel defaultTableModelInfo = new DefaultTableModel();
     DefaultTableModel defaultTableModelDiem = new DefaultTableModel();
+    private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     private int flag = 1;
     private int flagMenu = 1;
     private int flagSearch = 0;
@@ -42,7 +48,7 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
-        file.ReadFileCSV(list);
+        list = fileJSON.ReadFileJson();
         this.setLocationRelativeTo(null);
         initTableInfoMenu();
         initTableInfo();
@@ -105,7 +111,7 @@ public class Menu extends javax.swing.JFrame {
         int i = 1;
         defaultTableModelInfo.setRowCount(0);
         for (SinhVien sinhvien : list) {
-            String dateString = sinhvien.getDayBir().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+            String dateString = sdf.format(sinhvien.getDayBir());
             String diemTB = String.format("%.2f", sinhvien.getDiemTB());
             Object[] str = new Object[]{i++, sinhvien.getID(), sinhvien.getHoTen(), sinhvien.isGender() ? "Nam" : "Nữ", dateString, sinhvien.getQueQuan(), sinhvien.getLop(), diemTB, sinhvien.xepLoaiHocLuc()};
             defaultTableModelInfo.addRow(str);
@@ -152,7 +158,13 @@ public class Menu extends javax.swing.JFrame {
         int day = Integer.parseInt(txtNgay.getText());
         int month = Integer.parseInt(this.txtThang.getText());
         int year = Integer.parseInt(this.txtNam.getText());
-        LocalDate a = LocalDate.of(year, month, day);
+        String dateString = String.format("%d/%d/%d", day, month, year);
+        Date a = null;
+        try {
+            a = sdf.parse(dateString);
+        } catch (ParseException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
         sinhVien.setDayBir(a);
 
         sinhVien.setQueQuan((String) TxtAddress.getSelectedItem());
@@ -213,9 +225,8 @@ public class Menu extends javax.swing.JFrame {
                         rdNamRepair.setSelected(true);
                     }
 
-                    LocalDate a = sinhVien.getDayBir();
-                    String dateString = a.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-                    String[] b = dateString.split("-");
+                    String dateString = sdf.format(sinhVien.getDayBir());
+                    String[] b = dateString.split("/");
                     txtNgayRepair.setText(b[0]);
                     txtThangRepair.setText(b[1]);
                     txtNamRepair.setText(b[2]);
@@ -1676,9 +1687,10 @@ public class Menu extends javax.swing.JFrame {
 
     private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
         // TODO add your handling code here:
-        file.WriteFileCSV(list);
-        file.WriteFileCSVInfo(list);
-        file.WriteFileCSVScore(list);
+        fileCSV.WriteFileCSV(list);
+        fileCSV.WriteFileCSVInfo(list);
+        fileCSV.WriteFileCSVScore(list);
+        fileJSON.WriteFileJson(list);
         JOptionPane.showMessageDialog(this, "you have saved the file!", "Message", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_SaveActionPerformed
 
@@ -1780,10 +1792,9 @@ public class Menu extends javax.swing.JFrame {
 
     private int ConditionSearch(SinhVien sinhvien, String str) {
         String name = sinhvien.getHoTen().substring(1 + sinhvien.getHoTen().lastIndexOf(" "));
-        String dateString = sinhvien.getDayBir().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        String dateString = sdf.format(sinhvien.getDayBir());
         if (str.equalsIgnoreCase(sinhvien.getLop()) || str.equalsIgnoreCase(sinhvien.getID())
-                || str.equalsIgnoreCase(dateString) || str.equalsIgnoreCase(sinhvien.getQueQuan())
-                || str.equalsIgnoreCase(sinhvien.getHoTen()) || str.equalsIgnoreCase(name)) {
+                || str.equalsIgnoreCase(dateString) || str.equalsIgnoreCase(sinhvien.getHoTen()) || str.equalsIgnoreCase(name)) {
             return 1;
         }
         return 0;
@@ -1793,7 +1804,7 @@ public class Menu extends javax.swing.JFrame {
         int i = 0;
         defaultTableModelInfo.setRowCount(0);
         for (SinhVien sinhvien : listSearch) {
-            String dateString = sinhvien.getDayBir().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+            String dateString = sdf.format(sinhvien.getDayBir());
             String diemTB = String.format("%.2f", sinhvien.getDiemTB());
             Object[] str = new Object[]{i++, sinhvien.getID(), sinhvien.getHoTen(), sinhvien.isGender() ? "Nam" : "Nữ", dateString, sinhvien.getQueQuan(), sinhvien.getLop(), diemTB, sinhvien.xepLoaiHocLuc()};
             defaultTableModelInfo.addRow(str);
@@ -1923,10 +1934,16 @@ public class Menu extends javax.swing.JFrame {
             }
             sinhVien.setLop(txtLopRepair.getText());
 
-            int day = Integer.parseInt(txtNgayRepair.getText());
-            int month = Integer.parseInt(this.txtThangRepair.getText());
-            int year = Integer.parseInt(this.txtNamRepair.getText());
-            LocalDate a = LocalDate.of(year, month, day);
+            int day = Integer.parseInt(txtNgay.getText());
+            int month = Integer.parseInt(this.txtThang.getText());
+            int year = Integer.parseInt(this.txtNam.getText());
+            String dateString = String.format("%d/%d/%d", day, month, year);
+            Date a = null;
+            try {
+                a = sdf.parse(dateString);
+            } catch (ParseException ex) {
+                Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+            }
             sinhVien.setDayBir(a);
 
             sinhVien.setQueQuan((String) TxtAddressRepair.getSelectedItem());
@@ -2111,11 +2128,12 @@ public class Menu extends javax.swing.JFrame {
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         // TODO add your handling code here:
         String str = String.format("Want to save your changes to your file?");
-        int n = JOptionPane.showConfirmDialog(this, str, "Message", JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
+        int n = JOptionPane.showConfirmDialog(this, str, "Message", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
         if (n == JOptionPane.YES_OPTION) {
-            file.WriteFileCSV(list);
-            file.WriteFileCSVInfo(list);
-            file.WriteFileCSVScore(list);
+            fileCSV.WriteFileCSV(list);
+            fileCSV.WriteFileCSVInfo(list);
+            fileCSV.WriteFileCSVScore(list);
+            fileJSON.WriteFileJson(list);
         }
     }//GEN-LAST:event_formWindowClosing
 

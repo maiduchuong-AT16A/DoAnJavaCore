@@ -1,16 +1,1 @@
-﻿
-  {
-    "ID": "AT16",
-    "hoTen": "Microsoft",
-    "gender": false,
-    "Lop": "12a",
-    "dayBir": 2001-2-28,
-    "queQuan": "nam Định",
-    "listDiem": [
-      {
-        "monHoc": "1 Microsoft Way",
-        "diemMon": 9.2
-      }
-    ]
-  },
-  
+[{"ID":"at16a","hoTen":"mai đức hướng","gender":true,"Lop":"12a","dayBir":"Nov 28, 2001, 12:00:00 AM","queQuan":"Bắc Kạn","MonHoc":[{"monHoc":"Toán Học","diemMon":1.0},{"monHoc":"Vật Lý","diemMon":2.0},{"monHoc":"Hóa Học","diemMon":3.0},{"monHoc":"Ngữ Văn","diemMon":5.0},{"monHoc":"Sinh Học","diemMon":6.0},{"monHoc":"Lịch Sử","diemMon":4.0},{"monHoc":"Địa Lý","diemMon":7.0},{"monHoc":"GDCD","diemMon":8.0},{"monHoc":"Tin Học","diemMon":8.0},{"monHoc":"Công Nghệ","diemMon":6.0}]},{"ID":"at16a","hoTen":"mai đức hướng","gender":true,"Lop":"12a","dayBir":"Nov 30, 2001, 12:00:00 AM","queQuan":"Bạc Liêu","MonHoc":[{"monHoc":"Toán Học","diemMon":1.0},{"monHoc":"Vật Lý","diemMon":2.0},{"monHoc":"Hóa Học","diemMon":3.0},{"monHoc":"Ngữ Văn","diemMon":5.0},{"monHoc":"Sinh Học","diemMon":6.0},{"monHoc":"Lịch Sử","diemMon":4.0},{"monHoc":"Địa Lý","diemMon":7.0},{"monHoc":"GDCD","diemMon":8.0},{"monHoc":"Tin Học","diemMon":8.0},{"monHoc":"Công Nghệ","diemMon":6.0}]}]
