@@ -1,3 +1,33 @@
 STT,ID,Họ Và Tên,Giới Tính,Ngày Sinh,Quê Quán,Lớp,Điểm TB,Xếp Loại
-01,at16a,mai đức hướng,Nam,Wed Nov 28 00:00:00 ICT 2001,Bắc Kạn,12a,5.00,Trung Bình
-02,at16a,mai đức hướng,Nam,Fri Nov 30 00:00:00 ICT 2001,Bạc Liêu,12a,5.00,Trung Bình
+01,AT160221,Trần Thị A,Nam,02/08/2001,Bến Tre,10A4,7.50,Tiên Tiến
+02,AT160332,Mai Thị A,Nam,02/08/2001,Bến Tre,10A4,7.60,Tiên Tiến
+03,AT160334,Mai Thị B,Nam,02/08/2001,Bến Tre,10A4,7.52,Tiên Tiến
+04,AT111113,Trần Văn B,Nam,01/02/2001,Bạc Liêu,12A1,5.00,Trung Bình
+05,AT169111,Trần Văn Ct,Nam,01/02/1999,An Giang,10A3,9.20,Giỏi
+06,AT111112,Trần Văn D,Nam,01/02/2001,Bạc Liêu,12A1,6.30,Trung Bình
+07,AT150123,Nguyễn Văn D,Nam,07/02/2001,Bạc Liêu,12A1,7.60,Tiên Tiến
+08,AT160000,Trần Văn D,Nam,01/02/2001,Bạc Liêu,12A1,7.60,Tiên Tiến
+09,AT160006,Nguyễn Văn D,Nam,07/02/2001,Bạc Liêu,12A1,8.90,Giỏi
+10,DT161891,Kim Tuấn H,Nữ,21/02/2001,Bắc Ninh,12A7,2.20,Yếu
+11,AT161010,Mai Đức Hhh,Nữ,28/11/2001,Bạc Liêu,10A2,1.00,Yếu
+12,AT167171,Đào Huy Hà,Nam,28/11/2001,Bắc Kạn,10A1,1.00,Yếu
+13,AT161614,Mai Hướng Hà,Nam,28/11/2001,Bạc Liêu,12A1,2.50,Yếu
+14,AT160111,Đào Huy Hà,Nam,28/11/2001,Bắc Giang,12A7,3.30,Yếu
+15,AT160137,Mai Đức Hướng,Nam,28/11/2001,Bắc Kạn,12A1,2.00,Yếu
+16,AT160222,Mai Đức Hướng,Nam,28/11/2001,An Giang,12A1,4.40,Yếu
+17,AT160160,Mai Đức Hướng,Nam,28/11/2001,An Giang,12A1,4.60,Yếu
+18,AT160138,Mai Đức Hướng,Nữ,28/11/2001,Bạc Liêu,12A1,9.60,Giỏi
+19,AT169100,Trần Văn I,Nam,01/02/1999,An Giang,10A1,9.20,Giỏi
+20,AT169101,Trần Văn K,Nam,01/02/1999,An Giang,10A1,9.20,Giỏi
+21,AT151512,Tiền Đô La,Nữ,21/02/2001,Bắc Ninh,12A7,2.20,Yếu
+22,AT161601,Trần Văn M,Nam,01/02/1999,An Giang,10A3,9.20,Giỏi
+23,AT160335,Mai Quang M,Nam,02/08/2001,Bến Tre,10A4,7.50,Tiên Tiến
+24,AT160339,Mai Thị M,Nam,02/08/2001,Bến Tre,10A4,7.50,Tiên Tiến
+25,AT160233,Mai Quang N,Nam,02/08/2001,Bến Tre,10A4,7.50,Tiên Tiến
+26,AT160134,Mai Thị N,Nam,02/08/2001,Bến Tre,10A4,7.50,Tiên Tiến
+27,AT160101,Trần Văn Ninh,Nam,13/02/1999,Bắc Giang,10A4,9.20,Giỏi
+28,AT169112,Trần Văn T,Nam,01/02/1999,An Giang,10A1,9.20,Giỏi
+29,AT169191,Mai Thanh T,Nam,28/02/1999,An Giang,10A3,9.20,Giỏi
+30,AT160201,Mai Đức T,Nữ,28/02/2001,Bình Phước,12D1,4.20,Yếu
+31,AT151516,Trần Mai Thúy,Nữ,21/02/2001,Bắc Ninh,12A7,2.20,Yếu
+32,AT161688,Nguyễn Tiến Đ,Nữ,21/02/2001,Bắc Ninh,12A7,2.20,Yếu

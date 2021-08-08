@@ -33,7 +33,7 @@ public class FileCSV {
     private static final String PATH_CSV_FILE = currenDir + separator + "data" + separator + "FileData.csv";
     private static final String PATH_CSV_FILE_INFO = currenDir + separator + "data" + separator + "FileDataInfo.csv";
     private static final String PATH_CSV_FILE_SCORE = currenDir + separator + "data" + separator + "FileDataScore.csv";
-    private static final String PATH_CSV_FILE_OUPUT = currenDir + separator + "data" + separator + "FileDataOuput.csv";
+    private static final String PATH_CSV_FILE_LOGIN = currenDir + separator + "data" + separator + "FileAccount.csv";
 
     private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 //    public void ReadFileCSV(ArrayList<SinhVien> list) {
@@ -149,7 +149,7 @@ public class FileCSV {
                 String gender = sinhVien.isGender() == true ? "Nam" : "Nữ";
                 String dateString = sdf.format(sinhVien.getDayBir());
                 String f = String.format("%02d,%s,%s,%s,%s,%s,%s,%.2f,%s", i++, sinhVien.getID(), sinhVien.getHoTen(),
-                        gender, sinhVien.getDayBir(), sinhVien.getQueQuan(), sinhVien.getLop(), sinhVien.getDiemTB(), sinhVien.xepLoaiHocLuc());
+                        gender, dateString, sinhVien.getQueQuan(), sinhVien.getLop(), sinhVien.getDiemTB(), sinhVien.xepLoaiHocLuc());
                 fw.write(f);
                 fw.write("\n");
             }
@@ -214,7 +214,7 @@ public class FileCSV {
                     diem += String.format(",%.2f", item.getDiem());
                 }
                 String f = String.format("%02d,%s,%s,%s,%s,%s,%s%s", i++, sinhVien.getID(), sinhVien.getHoTen(),
-                        gender, sinhVien.getDayBir(), sinhVien.getQueQuan(), sinhVien.getLop(), diem);
+                        gender, dateString, sinhVien.getQueQuan(), sinhVien.getLop(), diem);
                 fw.write(f);
                 fw.write("\n");
             }
@@ -231,10 +231,12 @@ public class FileCSV {
         }
     }
 
-    public void WriteFileCSVOutPut(ArrayList<SinhVien> list) {
+    public void WriteFileCSVOutPut(ArrayList<SinhVien> list, String nameFile) {
+        String PATH_CSV_FILE_OUPUT = currenDir + separator + "data" + separator + nameFile + ".csv";
+        System.out.println(PATH_CSV_FILE_OUPUT);
         FileWriter fw = null;
         try {
-            fw = new FileWriter(PATH_CSV_FILE_OUPUT);
+            fw = new FileWriter(nameFile);
             String tilte = "STT,ID,Họ Và Tên,Giới Tính,Ngày Sinh,Quê Quán,Lớp,Toán Học,Vật Lý,Hóa Học,Văn Học,Sinh Học,Lịch Sử,Địa Lý,GDCD,Tin Học,Công nghệ";
             fw.write(tilte);
             fw.write("\n");
@@ -247,10 +249,57 @@ public class FileCSV {
                     diem += String.format(",%.2f", item.getDiem());
                 }
                 String f = String.format("%02d,%s,%s,%s,%s,%s,%s%s", i++, sinhVien.getID(), sinhVien.getHoTen(),
-                        gender, sinhVien.getDayBir(), sinhVien.getQueQuan(), sinhVien.getLop(), diem);
+                        gender, dateString, sinhVien.getQueQuan(), sinhVien.getLop(), diem);
                 fw.write(f);
                 fw.write("\n");
             }
+        } catch (IOException ex) {
+            Logger.getLogger(FileCSV.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            if (fw != null) {
+                try {
+                    fw.close();
+                } catch (IOException ex) {
+                    Logger.getLogger(FileCSV.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    }
+
+    public void ReadFileLogin(ArrayList<TaiKhoanDangNhap> list) {
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(PATH_CSV_FILE_LOGIN));
+            String line = null;
+            String[] str = new String[3];
+            try {
+                while ((line = br.readLine()) != null) {
+                    str = line.split(",");
+                    TaiKhoanDangNhap tk = new TaiKhoanDangNhap();
+                    tk.setTendangnhap(str[0]);
+                    tk.setMatkhau(str[1]);
+                    list.add(tk);
+                }
+            } catch (IOException ex) {
+                Logger.getLogger(FileCSV.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(FileCSV.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                br.close();
+            } catch (IOException ex) {
+                Logger.getLogger(FileCSV.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+
+    public void WriteFileLogin(TaiKhoanDangNhap tk) {
+        FileWriter fw = null;
+        try {
+            fw = new FileWriter(PATH_CSV_FILE_LOGIN, true);
+            fw.append(tk.getTendangnhap() + "," + tk.getMatkhau());
+            fw.append("\n");
         } catch (IOException ex) {
             Logger.getLogger(FileCSV.class.getName()).log(Level.SEVERE, null, ex);
         } finally {

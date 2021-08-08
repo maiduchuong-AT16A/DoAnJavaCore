@@ -141,9 +141,4 @@ public class SinhVien {
         return dTB / 10;
     }
 
-    @Override
-    public String toString() {
-        return "SinhVien{" + "ID=" + ID + ", hoTen=" + hoTen + ", gender=" + gender + ", lop=" + lop + ", dayBir=" + dayBir + ", queQuan=" + queQuan + ", listDiem=" + listDiem + '}';
-    }
-
 }

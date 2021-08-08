@@ -29,7 +29,6 @@
                   <Component id="ExitAdd" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
-              <Component id="jScrollPane2" alignment="1" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -51,9 +50,9 @@
                       </Group>
                       <Component id="txtID" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="txtNgay" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="txtNgay" min="-2" pref="44" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtThang" min="-2" pref="56" max="-2" attributes="0"/>
+                          <Component id="txtThang" min="-2" pref="52" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtNam" max="32767" attributes="0"/>
                       </Group>
@@ -62,26 +61,15 @@
                       <Component id="TxtAddress" alignment="0" min="-2" pref="166" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabelToan" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabelLy" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabelHoa" alignment="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jLabelVan" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="jLabel1Su" alignment="1" min="-2" pref="42" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabelToan" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelHoa" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jLabelVan" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jLabel1Su" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jLabelLy" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="txtToan" min="-2" pref="76" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Component id="jLabelCn" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtCongNghe" max="32767" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="txtVan" alignment="1" min="-2" pref="76" max="-2" attributes="0"/>
@@ -89,32 +77,59 @@
                               <Component id="txtLy" min="-2" pref="76" max="-2" attributes="0"/>
                               <Component id="txtHoa" min="-2" pref="76" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="txtToan" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabelSinh" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtSinh" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="jLabelSinh" min="-2" pref="46" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtSinh" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jLabelTin" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabelGdcd" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabelDia" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="jLabelCn" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                          <Component id="txtTin" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
-                                          <Component id="txtGDCD" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="txtDia" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="txtCongNghe" min="-2" pref="72" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                      <Component id="jLabelGdcd" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabelDia" min="-2" pref="70" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabelTin" min="-2" pref="71" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                  <Component id="txtTin" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="txtGDCD" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="txtDia" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -160,57 +175,54 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="jLabelCn" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelToan" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="jLabelToan" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="txtToan" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtCongNghe" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="txtLy" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtSinh" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabelSinh" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabelLy" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabelHoa" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtHoa" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="txtDia" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabelDia" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabelHoa" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtHoa" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="txtTin" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelTin" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="txtSu" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel1Su" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtSu" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel1Su" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtVan" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelVan" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="txtVan" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelVan" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="txtGDCD" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelGdcd" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="jLabelCn" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCongNghe" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtSinh" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelSinh" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtDia" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelDia" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtTin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelTin" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtGDCD" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelGdcd" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -222,91 +234,108 @@
                       <Component id="ExitAdd" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jScrollPane2" min="-2" pref="333" max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" min="-2" pref="322" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JTextField" name="txtName">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtNameFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtCongNghe">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtCongNgheFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n"/>
+            <Property name="text" type="java.lang.String" value="Name"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelCn">
           <Properties>
-            <Property name="text" type="java.lang.String" value="C&#xf4;ng Ngh&#x1ec7;"/>
+            <Property name="text" type="java.lang.String" value="Technology"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ng&#xe0;y Sinh"/>
+            <Property name="text" type="java.lang.String" value="Day Bir"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtLy">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtLyFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLyActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNgay">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtNgayFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNgayActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtDia">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtDiaFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtThang">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtThangFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtThangActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelGdcd">
           <Properties>
-            <Property name="text" type="java.lang.String" value="GDCD"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="C.Education"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Qu&#xea; Qu&#xe1;n"/>
+            <Property name="text" type="java.lang.String" value="Address"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtGDCD">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtGDCDFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGDCDActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtVan">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtVanFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtVanActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelToan">
           <Properties>
-            <Property name="text" type="java.lang.String" value="To&#xe1;n H&#x1ecd;c"/>
+            <Property name="text" type="java.lang.String" value="Maths"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelVan">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ng&#x1eef; V&#x103;n"/>
+            <Property name="text" type="java.lang.String" value="Literature"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelHoa">
           <Properties>
-            <Property name="text" type="java.lang.String" value="H&#xf3;a H&#x1ecd;c"/>
+            <Property name="text" type="java.lang.String" value="Chemistry"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelLy">
           <Properties>
-            <Property name="text" type="java.lang.String" value="V&#x1ead;t L&#xfd;"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Physical"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh"/>
+            <Property name="text" type="java.lang.String" value="Gender"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="rdNam">
@@ -323,7 +352,8 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelSinh">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Sinh H&#x1ecd;c"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Biology"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="rdNu">
@@ -336,27 +366,31 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelTin">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Tin H&#x1ecd;c"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Informatics"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="L&#x1edb;p"/>
+            <Property name="text" type="java.lang.String" value="Class"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDia">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&#x110;&#x1ecb;a L&#xfd;"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Geography"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtLop">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtLopFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLopActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1Su">
           <Properties>
-            <Property name="text" type="java.lang.String" value="L&#x1ecb;ch S&#x1eed;"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="History"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JToggleButton" name="Add1">
@@ -368,6 +402,9 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtToan">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtToanFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
@@ -379,6 +416,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtHoa">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtHoaFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtHoaActionPerformed"/>
           </Events>
         </Component>
@@ -391,6 +429,9 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtSinh">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtSinhFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="ExitAdd">
           <Properties>
@@ -401,11 +442,18 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtSu">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtSuFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNam">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtNamFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtTin">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtTinFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTinActionPerformed"/>
           </Events>
         </Component>
@@ -416,6 +464,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtID">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtIDFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtIDActionPerformed"/>
           </Events>
         </Component>
@@ -511,9 +560,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
                       <Component id="jLabel33" min="-2" pref="264" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel34" min="-2" pref="14" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace pref="183" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -521,10 +568,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -543,21 +587,6 @@
                 <Property name="text" type="java.lang.String" value="Th&#xea;m th&#xf4;ng tin h&#x1ecd;c sinh"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel34">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="18" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="X"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel34MouseClicked"/>
-              </Events>
-            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JScrollPane" name="jScrollPane2">
@@ -569,9 +598,6 @@
           <SubComponents>
             <Component class="javax.swing.JTable" name="table">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="10" style="0"/>
-                </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="1">
                     <Column editable="true" title="Ng&#xe0;y sinh" type="java.lang.String"/>
@@ -579,6 +605,30 @@
                     <Column editable="true" title="L&#x1edb;p" type="java.lang.String"/>
                     <Column editable="true" title="&#x110;i&#x1ec3;mTB" type="java.lang.Double"/>
                   </Table>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
                 </Property>
                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
@@ -658,13 +708,13 @@
                               <Component id="txtLopRepair" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtIDRepair" alignment="0" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Component id="jLabel18" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel21" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel20" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel28" alignment="1" min="-2" pref="37" max="-2" attributes="0"/>
-                              <Component id="jLabel19" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel21" max="32767" attributes="0"/>
+                              <Component id="jLabel20" alignment="1" pref="59" max="32767" attributes="0"/>
+                              <Component id="jLabel19" alignment="1" max="32767" attributes="0"/>
+                              <Component id="jLabel28" alignment="1" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -683,17 +733,25 @@
                                       <Component id="txtHoaRepair" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                          <Component id="jLabel24" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="txtSinhRepair" min="-2" pref="70" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="jLabel25" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel30" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="txtDia1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="txtDia1" max="32767" attributes="0"/>
+                                                      <Component id="jLabel30" max="32767" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="jLabel25" min="-2" pref="63" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -824,50 +882,68 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JTextField" name="txtNameRepair">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtNameRepairFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtSuRepair">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtSuRepairFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtCongNgheRepair">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtCongNgheRepairFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNamRepair">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtNamRepairFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel17">
           <Properties>
-            <Property name="text" type="java.lang.String" value="H&#x1ecd; v&#xe0; t&#xea;n"/>
+            <Property name="text" type="java.lang.String" value="Name"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel18">
           <Properties>
-            <Property name="text" type="java.lang.String" value="To&#xe1;n H&#x1ecd;c"/>
+            <Property name="text" type="java.lang.String" value="Maths"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtTinRepair">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtTinRepairFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTinRepairActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel19">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ng&#x1eef; V&#x103;n"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Literature"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel20">
           <Properties>
-            <Property name="text" type="java.lang.String" value="H&#xf3;a H&#x1ecd;c"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Chemistry"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel21">
           <Properties>
-            <Property name="text" type="java.lang.String" value="V&#x1ead;t L&#xfd;"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Physical"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel22">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Gender"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel23">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
             <Property name="text" type="java.lang.String" value="        ID"/>
           </Properties>
         </Component>
@@ -887,12 +963,14 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtIDRepair">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtIDRepairFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtIDRepairActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel24">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Sinh"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Biology"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="TxtAddressRepair">
@@ -979,82 +1057,101 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel25">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Tin H&#x1ecd;c"/>
+            <Property name="text" type="java.lang.String" value="Informatics"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel26">
           <Properties>
-            <Property name="text" type="java.lang.String" value="L&#x1edb;p"/>
+            <Property name="text" type="java.lang.String" value="Class"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txtDia1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&#x110;&#x1ecb;a L&#xfd;"/>
+            <Property name="text" type="java.lang.String" value="Geography"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtLopRepair">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtLopRepairFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLopRepairActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel27">
           <Properties>
-            <Property name="text" type="java.lang.String" value="C&#xf4;ng Ngh&#x1ec7;"/>
+            <Property name="text" type="java.lang.String" value="Technology"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel28">
           <Properties>
-            <Property name="text" type="java.lang.String" value="L&#x1ecb;ch S&#x1eed;"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="History"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel29">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ng&#xe0;y Sinh"/>
+            <Property name="text" type="java.lang.String" value="Day Bir"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtLyRepair">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtLyRepairFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLyRepairActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtToanRepair">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtToanRepairFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtToanRepairActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNgayRepair">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtNgayRepairFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNgayRepairActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtDialyRepair">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtDialyRepairFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtHoaRepair">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtHoaRepairFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtHoaRepairActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtThangRepair">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtThangRepairFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtThangRepairActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel30">
           <Properties>
-            <Property name="text" type="java.lang.String" value="GDCD"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="C.Education"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtSinhRepair">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtSinhRepairFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel31">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Qu&#xea; Qu&#xe1;n"/>
+            <Property name="text" type="java.lang.String" value="Address"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtGDCDRepair">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtGDCDRepairFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGDCDRepairActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtVanRepair">
           <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtVanRepairFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtVanRepairActionPerformed"/>
           </Events>
         </Component>
@@ -1119,47 +1216,95 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JDialog" name="jDialog1">
+    <Container class="javax.swing.JDialog" name="HelpDialog">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                  <Component id="jComboBox1" min="-2" pref="211" max="-2" attributes="0"/>
-                  <EmptySpace pref="27" max="32767" attributes="0"/>
-              </Group>
+              <Component id="jPanel1" alignment="1" max="32767" attributes="0"/>
+              <Component id="jScrollPane3" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                  <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="19" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="jScrollPane3" pref="264" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="&#xa;&#xa;Save : L&#x1b0;u file                 &#x9;Ctrl+S.&#xa;Add  : Th&#xea;m h&#x1ecd;c sinh      &#x9;Ctrl - Shift+A.&#xa;Repair:S&#x1eed;a Th&#xf4;ng tin     &#x9;Ctrl+G.&#xa;Delete :X&#xf3;a h&#x1ecd;c sinh       &#x9;Ctrl+D.&#xa;Clear  :X&#xf3;a Danh S&#xe1;ch.&#xa;Refresh:C&#x1ead;p nh&#x1ead;t.&#xa;View(xem):&#xa;&#x9;+ Scores Table:B&#x1ea3;ng &#x110;i&#x1ec3;m  &#x9;&#x9;&#x9;Ctrl - Shift +P &#xa;&#x9;+ Infomation Table:B&#x1ea3;ng Th&#xf4;ng Tin H&#x1ecd;c Sinh&#x9;&#x9;Ctrl - Shift +I  &#xa;Filter(l&#x1ecd;c) :(L&#x1b0;u &#xfd;: c&#xf3; th&#x1ec3; l&#x1ecd;c nhi&#x1ec1;u tr&#x1b0;&#x1edd;ng)&#xa;&#x9;+ Filter by class:L&#x1ecd;c theo l&#x1edb;p &#xa;&#x9;+ Fiilter by address: L&#x1ecd;c theo qu&#xea; qu&#xe1;n.&#xa;&#x9;+ Filter by learning:L&#x1ecd;c theo h&#x1ecd;c l&#x1ef1;c &#xa;Search: T&#xec;m ki&#x1ebf;m h&#x1ecd;c sinh&#xa;Export file :xu&#x1ea5;t file    "/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel1">
           <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="cc" red="33" type="rgb"/>
             </Property>
           </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-          </AuxValues>
-        </Component>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
+                      <Component id="jLabel6" min="-2" pref="214" max="-2" attributes="0"/>
+                      <EmptySpace pref="110" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="H&#x1b0;&#x1edb;ng d&#x1eab;n s&#x1eed; d&#x1ee5;ng"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroup2">
+    <Component class="javax.swing.JFileChooser" name="jFileChooser1">
+      <Properties>
+        <Property name="currentDirectory" type="java.io.File" editor="org.netbeans.beaninfo.editors.FileEditor">
+          <SerializedValue value="-84,-19,0,5,115,114,0,12,106,97,118,97,46,105,111,46,70,105,108,101,4,45,-92,69,14,13,-28,-1,3,0,1,76,0,4,112,97,116,104,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,116,0,21,67,58,92,85,115,101,114,115,92,65,67,69,82,92,68,101,115,107,116,111,112,119,2,0,92,120"/>
+        </Property>
+        <Property name="dialogTitle" type="java.lang.String" value=""/>
+        <Property name="fileHidingEnabled" type="boolean" value="false"/>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[425, 400]"/>
+        </Property>
+      </Properties>
     </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar2">
       <Properties>
@@ -1178,6 +1323,9 @@
               <Insets value="[0, 7, 0, 7]"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu4ActionPerformed"/>
+          </Events>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="Save">
               <Properties>
@@ -1186,33 +1334,12 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Save"/>
                 <Property name="iconTextGap" type="int" value="0"/>
-                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                  <Insets value="[0, 2, 0, -27]"/>
-                </Property>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[230, 28]"/>
                 </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SaveActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
-              <Properties>
-                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Shift+Ctrl+S"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Save As"/>
-                <Property name="iconTextGap" type="int" value="2"/>
-                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                  <Insets value="[0, 0, 0, 0]"/>
-                </Property>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[230, 28]"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem4ActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
@@ -1266,13 +1393,10 @@
             <MenuItem class="javax.swing.JMenuItem" name="RepairMenu">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+R"/>
+                  <KeyStroke key="Ctrl+G"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Repair"/>
                 <Property name="iconTextGap" type="int" value="2"/>
-                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                  <Insets value="[0, 2, 0, -32]"/>
-                </Property>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[230, 28]"/>
                 </Property>
@@ -1284,7 +1408,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="DeleteMenu">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Shift+Ctrl+D"/>
+                  <KeyStroke key="Ctrl+D"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Delete"/>
                 <Property name="iconTextGap" type="int" value="2"/>
@@ -1298,9 +1422,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="clearMenu">
               <Properties>
-                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Shift+C"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Clear"/>
                 <Property name="iconTextGap" type="int" value="2"/>
                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
@@ -1374,23 +1495,6 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="showMenuInfoActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator6">
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="showMenuDiem1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Histori Log"/>
-                <Property name="iconTextGap" type="int" value="2"/>
-                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                  <Insets value="[0, 2, 0, 0]"/>
-                </Property>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[230, 28]"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="showMenuDiem1ActionPerformed"/>
-              </Events>
-            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu2">
@@ -1400,59 +1504,47 @@
               <Font name="Segoe UI" size="14" style="0"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu2ActionPerformed"/>
+          </Events>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="locTheoLop">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Filter by class"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="locTheoLopActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="locTheoHocLuc">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Filter by learning"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="locTheoHocLucActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator9">
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="FilterMenu">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Shift+Ctrl+R"/>
+                  <KeyStroke key="Shift+Ctrl+F"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Rank"/>
+                <Property name="text" type="java.lang.String" value="Filter"/>
+                <Property name="iconTextGap" type="int" value="2"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 2, 0, 0]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[230, 28]"/>
+                </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FilterMenuActionPerformed"/>
+              </Events>
             </MenuItem>
-            <Menu class="javax.swing.JMenu" name="jMenu3">
+            <MenuItem class="javax.swing.JMenuItem" name="SearchMenu">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jMenu3"/>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+F"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Search"/>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Default Cursor"/>
+                </Property>
+                <Property name="iconTextGap" type="int" value="2"/>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[230, 28]"/>
+                </Property>
               </Properties>
-              <SubComponents>
-                <MenuItem class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItem1">
-                  <Properties>
-                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="buttonGroup2"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="jRadioButtonMenuItem1"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonMenuItem1ActionPerformed"/>
-                  </Events>
-                </MenuItem>
-                <MenuItem class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItem2">
-                  <Properties>
-                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="buttonGroup2"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="jRadioButtonMenuItem2"/>
-                  </Properties>
-                </MenuItem>
-              </SubComponents>
-            </Menu>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SearchMenuActionPerformed"/>
+              </Events>
+            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="SortScores">
@@ -1509,22 +1601,35 @@
                 </MenuItem>
               </SubComponents>
             </Menu>
-            <MenuItem class="javax.swing.JMenuItem" name="AddMenu4">
+            <Menu class="javax.swing.JMenu" name="jMenu3">
               <Properties>
-                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Shift+Ctrl+R"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Scores Sort"/>
-                <Property name="iconTextGap" type="int" value="2"/>
-                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                  <Insets value="[0, 0, 0, 0]"/>
-                </Property>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[230, 28]"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="Score Sort"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="decrease">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Decrease"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="decreaseActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="ascending">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ascending"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ascendingActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JMenuItem" name="ClassSort">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Class Sort"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddMenu4ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ClassSortActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -1556,24 +1661,6 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddMenu3ActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="AddMenu10">
-              <Properties>
-                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Shift+Ctrl+A"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Contact"/>
-                <Property name="iconTextGap" type="int" value="2"/>
-                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                  <Insets value="[0, 2, 0, 0]"/>
-                </Property>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[230, 28]"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddMenu10ActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -1630,8 +1717,20 @@
           <Group type="102" alignment="1" attributes="0">
               <Component id="nameTable" min="-2" pref="180" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="classComBoBox" min="-2" pref="96" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="queQuan" min="-2" pref="101" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="hocLuc" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
           <Component id="jToolBar2" alignment="0" pref="936" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
@@ -1646,9 +1745,16 @@
           <Group type="102" alignment="1" attributes="0">
               <Component id="jToolBar2" min="-2" pref="69" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="nameTable" alignment="3" pref="40" max="32767" attributes="0"/>
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="queQuan" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hocLuc" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="classComBoBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="nameTable" alignment="3" pref="40" max="32767" attributes="0"/>
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="502" max="-2" attributes="0"/>
@@ -1710,14 +1816,18 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="rollover" type="boolean" value="true"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
       <SubComponents>
         <Component class="javax.swing.JButton" name="AddToolBar">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="0"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore\images\add-user.png"/>
+              <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore - Copy\images\add-user.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Add"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -1745,6 +1855,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton6">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="0"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore\images\remove-user.png"/>
             </Property>
@@ -1765,6 +1878,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="RepairToolBar">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="0"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore\images\settings.png"/>
             </Property>
@@ -1791,6 +1907,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="showToolBar">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="0"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore\images\view.png"/>
             </Property>
@@ -1817,6 +1936,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="SearchToolBar">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="0"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore\images\loupe.png"/>
             </Property>
@@ -1840,10 +1962,71 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SearchToolBarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToolBar$Separator" name="jSeparator3">
+        <Component class="javax.swing.JToolBar$Separator" name="jSeparator4">
+        </Component>
+        <Component class="javax.swing.JButton" name="FilterToolBar">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="0"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore - Copy\images\filter.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Filter"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="iconTextGap" type="int" value="1"/>
+            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+              <Insets value="[2, 16, 2, 16]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[91, 75]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[91, 75]"/>
+            </Property>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FilterToolBarActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JToolBar$Separator" name="jSeparator11">
+        </Component>
+        <Component class="javax.swing.JButton" name="ExportFile">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="0"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore - Copy\images\log-out-1.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Export file"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="iconTextGap" type="int" value="1"/>
+            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+              <Insets value="[2, 16, 2, 16]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[91, 75]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[91, 75]"/>
+            </Property>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExportFileActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JToolBar$Separator" name="jSeparator6">
         </Component>
         <Component class="javax.swing.JButton" name="jButton10">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="0"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore\images\info.png"/>
             </Property>
@@ -1862,29 +2045,9 @@
             </Property>
             <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JToolBar$Separator" name="jSeparator4">
-        </Component>
-        <Component class="javax.swing.JButton" name="jButton11">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ACER\Documents\DoAnJavaCore\images\info.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="OuputFile"/>
-            <Property name="focusable" type="boolean" value="false"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-            <Property name="iconTextGap" type="int" value="1"/>
-            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-              <Insets value="[2, 16, 2, 16]"/>
-            </Property>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[91, 75]"/>
-            </Property>
-            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[91, 75]"/>
-            </Property>
-            <Property name="verticalTextPosition" type="int" value="3"/>
-          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -1893,7 +2056,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="B&#x1ea3;ng Th&#xf4;ng Tin"/>
+        <Property name="text" type="java.lang.String" value="Infomation Table"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
             <TitledBorder/>
@@ -1910,6 +2073,119 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel32">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="hocLuc">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="5">
+            <StringItem index="0" value="Academic ability"/>
+            <StringItem index="1" value="Gi&#x1ecf;i"/>
+            <StringItem index="2" value="Ti&#xea;n ti&#x1ebf;n"/>
+            <StringItem index="3" value="Trung B&#xec;nh"/>
+            <StringItem index="4" value="Y&#x1ebf;u"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hocLucActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="classComBoBox">
+      <Properties>
+        <Property name="maximumRowCount" type="int" value="12"/>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="1">
+            <StringItem index="0" value="Class"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classComBoBoxActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="queQuan">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="64">
+            <StringItem index="0" value="Address"/>
+            <StringItem index="1" value="An Giang"/>
+            <StringItem index="2" value="B&#xe0; R&#x1ecb;a - V&#x169;ng T&#xe0;u"/>
+            <StringItem index="3" value="B&#x1eaf;c Giang"/>
+            <StringItem index="4" value="B&#x1eaf;c K&#x1ea1;n"/>
+            <StringItem index="5" value="B&#x1ea1;c Li&#xea;u"/>
+            <StringItem index="6" value="B&#x1eaf;c Ninh"/>
+            <StringItem index="7" value="B&#x1ebf;n Tre"/>
+            <StringItem index="8" value="B&#xec;nh &#x110;&#x1ecb;nh"/>
+            <StringItem index="9" value="B&#xec;nh D&#x1b0;&#x1a1;ng"/>
+            <StringItem index="10" value="B&#xec;nh Ph&#x1b0;&#x1edb;c"/>
+            <StringItem index="11" value="B&#xec;nh Thu&#x1ead;n"/>
+            <StringItem index="12" value="C&#xe0; Mau"/>
+            <StringItem index="13" value="Cao B&#x1eb1;ng"/>
+            <StringItem index="14" value="&#x110;&#x1eaf;k L&#x1eaf;k"/>
+            <StringItem index="15" value="&#x110;&#x1eaf;k N&#xf4;ng"/>
+            <StringItem index="16" value="&#x110;i&#x1ec7;n Bi&#xea;n"/>
+            <StringItem index="17" value="&#x110;&#x1ed3;ng Nai"/>
+            <StringItem index="18" value="&#x110;&#x1ed3;ng Th&#xe1;p"/>
+            <StringItem index="19" value="Gia Lai"/>
+            <StringItem index="20" value="H&#xe0; Giang"/>
+            <StringItem index="21" value="H&#xe0; Nam"/>
+            <StringItem index="22" value="H&#xe0; T&#x129;nh"/>
+            <StringItem index="23" value="H&#x1ea3;i D&#x1b0;&#x1a1;ng"/>
+            <StringItem index="24" value="H&#x1ead;u Giang"/>
+            <StringItem index="25" value="H&#xf2;a B&#xec;nh"/>
+            <StringItem index="26" value="H&#x1b0;ng Y&#xea;n"/>
+            <StringItem index="27" value="Kh&#xe1;nh H&#xf2;a"/>
+            <StringItem index="28" value="Ki&#xea;n Giang"/>
+            <StringItem index="29" value="Kon Tum"/>
+            <StringItem index="30" value="Lai Ch&#xe2;u"/>
+            <StringItem index="31" value="L&#xe2;m &#x110;&#x1ed3;ng"/>
+            <StringItem index="32" value="L&#x1ea1;ng S&#x1a1;n"/>
+            <StringItem index="33" value="L&#xe0;o Cai"/>
+            <StringItem index="34" value="Long An"/>
+            <StringItem index="35" value="Nam &#x110;&#x1ecb;nh"/>
+            <StringItem index="36" value="Ngh&#x1ec7; An"/>
+            <StringItem index="37" value="Ninh B&#xec;nh"/>
+            <StringItem index="38" value="Ninh Thu&#x1ead;n"/>
+            <StringItem index="39" value="Ph&#xfa; Th&#x1ecd;"/>
+            <StringItem index="40" value="Qu&#x1ea3;ng B&#xec;nh"/>
+            <StringItem index="41" value="Qu&#x1ea3;ng Nam"/>
+            <StringItem index="42" value="Qu&#x1ea3;ng Ng&#xe3;i"/>
+            <StringItem index="43" value="Qu&#x1ea3;ng Ninh"/>
+            <StringItem index="44" value="Qu&#x1ea3;ng Tr&#x1ecb;"/>
+            <StringItem index="45" value="S&#xf3;c Tr&#x103;ng"/>
+            <StringItem index="46" value="S&#x1a1;n La"/>
+            <StringItem index="47" value="T&#xe2;y Ninh"/>
+            <StringItem index="48" value="Th&#xe1;i B&#xec;nh"/>
+            <StringItem index="49" value="Th&#xe1;i Nguy&#xea;n"/>
+            <StringItem index="50" value="Thanh H&#xf3;a"/>
+            <StringItem index="51" value="Th&#x1eeb;a Thi&#xea;n Hu&#x1ebf;"/>
+            <StringItem index="52" value="Ti&#x1ec1;n Giang"/>
+            <StringItem index="53" value="Tr&#xe0; Vinh"/>
+            <StringItem index="54" value="Tuy&#xea;n Quang"/>
+            <StringItem index="55" value="V&#x129;nh Long"/>
+            <StringItem index="56" value="V&#x129;nh Ph&#xfa;c"/>
+            <StringItem index="57" value="Y&#xea;n B&#xe1;i"/>
+            <StringItem index="58" value="Ph&#xfa; Y&#xea;n"/>
+            <StringItem index="59" value="C&#x1ea7;n Th&#x1a1;"/>
+            <StringItem index="60" value="&#x110;&#xe0; N&#x1eb5;ng"/>
+            <StringItem index="61" value="H&#x1ea3;i Ph&#xf2;ng"/>
+            <StringItem index="62" value="H&#xe0; N&#x1ed9;i"/>
+            <StringItem index="63" value="TP HCM"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="queQuanActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
